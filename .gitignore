@@ -42,3 +42,13 @@ build/
 
 # Docker
 *.pid
+
+# Runtime generated artifacts
+backend/generated/
+
+# Python virtual environments
+backend/.venv/
+backend/venv/
+
+# Python cache
+backend/__pycache__/
