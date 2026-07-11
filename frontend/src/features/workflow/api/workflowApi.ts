@@ -15,6 +15,11 @@ import type {
   WorkflowEvent,
 } from "@/shared/types";
 
+const API_BASE =
+  import.meta.env.PROD
+    ? import.meta.env.VITE_API_BASE_URL
+    : "/api/v1";
+
 // ── REST endpoints ─────────────────────────────────────────────────────────
 
 /**
@@ -91,7 +96,7 @@ function streamRun(runId: string, handlers: StreamHandlers): AbortController {
     let response: Response;
 
     try {
-      response = await fetch(`/api/v1/runs/${runId}/stream`, {
+      response = await fetch(`${API_BASE}/runs/${runId}/stream`, {
         headers: {
           Authorization: token ? `Bearer ${token}` : "",
           Accept: "text/event-stream",
@@ -192,32 +197,35 @@ function streamRun(runId: string, handlers: StreamHandlers): AbortController {
  * Returns the artifact content as a Blob suitable for triggering a browser
  * file-save.
  */
-async function downloadArtifact(runId: string, artifactId: string): Promise<Blob> {
-  const token = useAuthStore.getState().accessToken;
-  const response = await fetch(
-    `/api/v1/runs/${runId}/artifacts/${artifactId}/download`,
-    { headers: { Authorization: token ? `Bearer ${token}` : "" } },
-  );
-  if (!response.ok) {
-    throw new Error(`Download failed: ${response.status}`);
-  }
-  return response.blob();
-}
 
+
+async function downloadArtifact(
+  runId: string,
+  artifactId: string
+): Promise<Blob> {
+  const { data } = await api.get(
+    `/runs/${runId}/artifacts/${artifactId}/download`,
+    {
+      responseType: "blob",
+    }
+  );
+
+  return data;
+}
 /**
  * GET /runs/{runId}/download
  *
  * Returns a ZIP Blob containing all artifacts for the run.
  */
 async function downloadRunZip(runId: string): Promise<Blob> {
-  const token = useAuthStore.getState().accessToken;
-  const response = await fetch(`/api/v1/runs/${runId}/download`, {
-    headers: { Authorization: token ? `Bearer ${token}` : "" },
-  });
-  if (!response.ok) {
-    throw new Error(`ZIP download failed: ${response.status}`);
-  }
-  return response.blob();
+  const { data } = await api.get(
+    `/runs/${runId}/download`,
+    {
+      responseType: "blob",
+    }
+  );
+
+  return data;
 }
 
 /** Trigger a browser file-save from a Blob without leaving the page. */
