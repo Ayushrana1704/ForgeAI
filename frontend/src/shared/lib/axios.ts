@@ -11,7 +11,7 @@ export const api = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
-  timeout: 30_000,
+  timeout: 120_000,
 });
 
 // Attach the access token to every request
