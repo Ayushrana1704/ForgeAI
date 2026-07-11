@@ -1,5 +1,6 @@
-<div align="center">
-
+<p align="center">
+  <img src="./docs/images/hero.png" alt="ForgeAI Banner" width="100%">
+</p>
 # 🚀 ForgeAI
 
 ### Enterprise Multi-Agent Software Engineering Platform
