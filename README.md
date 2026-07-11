@@ -1,16 +1,12 @@
 <div align="center">
 
-# ForgeAI
+# 🚀 ForgeAI
 
 ### Enterprise Multi-Agent Software Engineering Platform
 
-Transform software ideas into production-ready engineering artifacts using an AI-powered multi-agent pipeline.
+**Transform software ideas into production-ready engineering artifacts through an AI-powered multi-agent software engineering pipeline.**
 
-<p>
-  <img src="docs/images/hero.png" alt="ForgeAI Banner" width="100%">
-</p>
-
-<p>
+<p align="center">
 
 <img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge"/>
 
@@ -28,355 +24,464 @@ Transform software ideas into production-ready engineering artifacts using an AI
 
 <img src="https://img.shields.io/badge/Render-Deployed-46E3B7?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Clean_Architecture-Enterprise-success?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
 
 </p>
 
-[🚀 Live Demo](https://your-vercel-link.vercel.app)
-&nbsp;&nbsp;•&nbsp;&nbsp;
-[📖 API Docs](https://your-render-url.onrender.com/docs)
-&nbsp;&nbsp;•&nbsp;&nbsp;
-[⚙️ Backend API](https://your-render-url.onrender.com)
+> **A modern AI platform that orchestrates multiple specialized agents to automate the Software Development Lifecycle (SDLC).**
+
+---
+
+### 🌐 Live Application
+
+| Service | Link |
+|---------|------|
+| 🚀 Frontend | https://YOUR-VERCEL-URL |
+| ⚙ Backend API | https://YOUR-RENDER-URL |
+| 📚 Swagger Docs | https://YOUR-RENDER-URL/docs |
+
+---
 
 </div>
 
----
-
-## 📑 Table of Contents
-
-- [Overview](#-overview)
-- [Why ForgeAI?](#-why-forgeai)
-- [AI Multi-Agent Pipeline](#-ai-multi-agent-pipeline)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Architecture](#-architecture)
-- [Project Structure](#-project-structure)
-- [Screenshots](#-screenshots)
-- [Installation](#-installation)
-- [Environment Variables](#-environment-variables)
-- [Deployment](#-deployment)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
-
 # 📖 Overview
 
-Software development begins long before writing code. Teams must analyze requirements, design system architecture, plan implementation, model databases, review outputs, and organize documentation.
+Software engineering begins long before developers write the first line of code. Gathering requirements, designing architectures, planning development tasks, modeling databases, reviewing outputs, and preparing technical documentation require significant manual effort.
 
-ForgeAI automates this process through an intelligent multi-agent workflow. Starting from a single natural language prompt, specialized AI agents collaborate to generate structured software engineering artifacts covering every major phase of the software development lifecycle.
+ForgeAI automates these early software engineering activities through a collaborative **Multi-Agent AI Pipeline**.
 
-Built using **FastAPI**, **React**, **TypeScript**, **PostgreSQL**, and **Clean Architecture**, ForgeAI demonstrates how modern AI systems can be combined with enterprise software engineering principles to create scalable developer tooling.
+Instead of relying on a single Large Language Model response, ForgeAI coordinates multiple specialized AI agents where each agent focuses on a dedicated engineering responsibility. The generated output from one agent becomes contextual input for the next, producing consistent and structured software engineering artifacts from a single natural language project description.
+
+The platform demonstrates how modern AI systems can be integrated with enterprise software engineering principles using **FastAPI**, **React**, **TypeScript**, **PostgreSQL**, **Clean Architecture**, and **cloud-native deployment**.
+
+---
+
+# 🎯 Problem Statement
+
+Traditional AI assistants can generate code, but they rarely follow the structured engineering workflow required for real-world software development.
+
+Developers still need to manually perform tasks such as:
+
+- Requirement analysis
+- System architecture design
+- Database modeling
+- Task planning
+- Backend planning
+- Frontend planning
+- Documentation
+- Review and refinement
+
+These steps are repetitive, time-consuming, and often inconsistent across projects.
+
+---
+
+# 💡 Solution
+
+ForgeAI introduces an **AI-driven Multi-Agent Software Engineering Platform** where independent AI agents collaborate to automate the Software Development Lifecycle.
+
+Starting from a simple project description, ForgeAI generates organized engineering artifacts covering:
+
+- Software Requirements
+- System Architecture
+- Task Breakdown
+- Database Design
+- Backend Planning
+- Frontend Planning
+- Review Reports
+- Refined Documentation
+- Downloadable Project Artifacts
 
 ---
 
 # ✨ Why ForgeAI?
 
-ForgeAI is more than an AI chatbot—it is an orchestrated software engineering platform where each AI agent is responsible for a dedicated engineering task.
+ForgeAI is designed to showcase how AI orchestration can be combined with enterprise software engineering practices.
 
-### Highlights
+Unlike traditional single-prompt AI applications, ForgeAI follows a modular pipeline where every stage has a clearly defined responsibility.
 
-- 🤖 Multi-Agent AI Orchestration
-- 🏗️ Clean Architecture Backend
-- 🔐 JWT Authentication & Refresh Tokens
-- ⚡ Fully Asynchronous FastAPI Backend
-- 🗄️ PostgreSQL (Neon) Integration
-- 🎨 Modern React + TypeScript Frontend
-- 📄 Artifact Preview & Download
-- 📦 ZIP Artifact Packaging
-- 🌐 Production Deployment on Vercel & Render
-- 🐳 Dockerized Backend
-- 📑 Automatic Software Documentation Generation
-- 🔄 Modular & Extensible Agent Pipeline
+This approach provides:
 
-# 🤖 AI Multi-Agent Pipeline
-
-ForgeAI follows a collaborative **multi-agent architecture**, where each specialized AI agent is responsible for a dedicated phase of the Software Development Lifecycle (SDLC). Instead of relying on a single large language model response, the platform orchestrates multiple agents to generate structured, production-ready software engineering artifacts.
-
-Each agent receives context from the previous stage, performs a specialized task, and passes its output to the next agent, forming an end-to-end AI-powered software engineering workflow.
+- 🤖 AI Agent Orchestration
+- 🏗 Enterprise Clean Architecture
+- 📑 Structured Documentation Generation
+- ⚡ Fully Asynchronous Backend
+- 🔐 Secure Authentication
+- 🗄 PostgreSQL Persistence
+- 📦 Artifact Packaging
+- 🌐 Production Deployment
+- 🐳 Dockerized Infrastructure
+- 🔄 Extensible AI Pipeline
 
 ---
 
-## Pipeline Workflow
+# ⭐ Key Highlights
 
-```text
-                          User Project Idea
-                                  │
-                                  ▼
-                   ┌─────────────────────────┐
-                   │ Requirements Analyst    │
-                   └─────────────────────────┘
-                                  │
-                                  ▼
-                   ┌─────────────────────────┐
-                   │ Software Architect      │
-                   └─────────────────────────┘
-                                  │
-                                  ▼
-                   ┌─────────────────────────┐
-                   │ Task Planner            │
-                   └─────────────────────────┘
-                                  │
-                                  ▼
-                   ┌─────────────────────────┐
-                   │ Database Designer       │
-                   └─────────────────────────┘
-                                  │
-                                  ▼
-                   ┌─────────────────────────┐
-                   │ Backend Generator       │
-                   └─────────────────────────┘
-                                  │
-                                  ▼
-                   ┌─────────────────────────┐
-                   │ Frontend Generator      │
-                   └─────────────────────────┘
-                                  │
-                                  ▼
-                   ┌─────────────────────────┐
-                   │ Reviewer                │
-                   └─────────────────────────┘
-                                  │
-                                  ▼
-                   ┌─────────────────────────┐
-                   │ Refiner                 │
-                   └─────────────────────────┘
-                                  │
-                                  ▼
-                   ┌─────────────────────────┐
-                   │ Artifact Packager       │
-                   └─────────────────────────┘
-                                  │
-                                  ▼
-                   📦 Downloadable Engineering Artifacts
+| Feature | Description |
+|----------|-------------|
+| 🤖 Multi-Agent AI | Nine specialized AI agents collaborate throughout the SDLC |
+| ⚡ FastAPI Backend | High-performance asynchronous REST API |
+| 🎨 Modern Frontend | React + TypeScript + TailwindCSS |
+| 🔐 Authentication | JWT Access & Refresh Token authentication |
+| 🗄 Database | PostgreSQL hosted on Neon |
+| ☁ Cloud Deployment | Render + Vercel |
+| 📄 Artifact Management | Preview, download and ZIP packaging |
+| 🏗 Clean Architecture | Presentation, Application, Domain and Infrastructure layers |
+| 🐳 Docker | Production-ready containerization |
+| 📚 Swagger API | Interactive API documentation |
+
+---
+
+# 📑 Table of Contents
+
+- Overview
+- Problem Statement
+- Solution
+- AI Multi-Agent Pipeline
+- Features
+- Tech Stack
+- Architecture
+- Project Structure
+- Screenshots
+- Installation
+- Environment Variables
+- Docker
+- Deployment
+- API Overview
+- Roadmap
+- Contributing
+- License
+- Author
+
+---
+
+# 🤖 AI Multi-Agent Pipeline
+
+ForgeAI is built around a collaborative **Multi-Agent AI architecture** that decomposes software engineering into specialized responsibilities. Rather than relying on a single prompt or monolithic AI response, the platform coordinates multiple AI agents, each dedicated to a specific phase of the Software Development Lifecycle (SDLC).
+
+Every agent consumes structured outputs from the previous stage, enriches the project with domain-specific knowledge, and passes its results to the next agent. This sequential orchestration improves consistency, modularity, and the overall quality of generated engineering artifacts.
+
+---
+
+## 🔄 Pipeline Workflow
+
+```mermaid
+flowchart TD
+
+A[📝 User Project Description]
+
+A --> B[📋 Requirements Analyst]
+
+B --> C[🏗️ Software Architect]
+
+C --> D[📅 Task Planner]
+
+D --> E[🗄️ Database Designer]
+
+E --> F[⚙️ Backend Generator]
+
+F --> G[🎨 Frontend Generator]
+
+G --> H[🔍 Reviewer]
+
+H --> I[✨ Refiner]
+
+I --> J[📦 Artifact Packager]
+
+J --> K[(Generated Engineering Artifacts)]
 ```
 
 ---
 
-# Agent Responsibilities
+# 📚 AI Agent Responsibilities
 
-| Agent | Responsibility | Generated Output |
-|-------|----------------|------------------|
-| 📋 Requirements Analyst | Extracts and structures functional and non-functional requirements from the user's project description. | Software Requirements Specification (SRS) |
-| 🏗 Software Architect | Designs the overall system architecture, defines components, modules, and communication patterns. | High-Level Design (HLD) |
-| ✅ Task Planner | Breaks the project into manageable development tasks and milestones. | Development Roadmap & Task Breakdown |
-| 🗄 Database Designer | Designs database entities, relationships, normalization, and schema. | ER Diagram & Database Schema |
-| ⚙ Backend Generator | Generates backend architecture, APIs, business logic, and service structure. | Backend Design Documentation |
-| 🎨 Frontend Generator | Defines frontend architecture, UI structure, pages, and component hierarchy. | Frontend Design Documentation |
-| 🔍 Reviewer | Reviews generated artifacts for consistency, completeness, and quality. | Review Report |
-| ✨ Refiner | Improves generated artifacts by resolving inconsistencies and enhancing clarity. | Refined Documentation |
-| 📦 Artifact Packager | Organizes all generated documents into downloadable artifacts. | ZIP Package & Individual Documents |
-
----
-
-# Pipeline Characteristics
-
-### Intelligent Orchestration
-
-Each AI agent performs a specialized responsibility instead of attempting to solve the entire problem at once. This modular approach improves maintainability, scalability, and output quality.
-
-### Context-Aware Processing
-
-Agents consume outputs from previous stages, ensuring contextual consistency across the complete engineering workflow.
-
-### Extensible Design
-
-New AI agents can be introduced into the pipeline without impacting the existing architecture, allowing ForgeAI to evolve with additional engineering capabilities.
-
-### Artifact-Based Workflow
-
-Every stage generates reusable engineering artifacts that can be previewed, downloaded individually, or packaged into a complete project archive.
-
-# 🚀 Features
-
-ForgeAI combines modern AI orchestration with enterprise-grade software engineering practices to automate the early stages of software development.
+| Agent | Primary Responsibility | Output |
+|--------|------------------------|--------|
+| 📋 Requirements Analyst | Extracts and structures functional & non-functional requirements from the user prompt. | Software Requirements Specification (SRS) |
+| 🏗️ Software Architect | Designs the overall application architecture, modules, and component interactions. | High-Level Architecture Document |
+| 📅 Task Planner | Breaks the project into manageable milestones, epics, and implementation tasks. | Development Roadmap |
+| 🗄️ Database Designer | Designs entities, relationships, schema, and normalization strategy. | Database Design Document |
+| ⚙️ Backend Generator | Plans APIs, services, authentication, business logic, and backend architecture. | Backend Design Document |
+| 🎨 Frontend Generator | Designs pages, layouts, components, UI flow, and frontend architecture. | Frontend Design Document |
+| 🔍 Reviewer | Reviews generated artifacts for consistency, completeness, and engineering quality. | Review Report |
+| ✨ Refiner | Improves documentation by resolving inconsistencies and refining outputs. | Refined Documentation |
+| 📦 Artifact Packager | Collects, organizes, and prepares all generated artifacts for preview and download. | ZIP Archive & Individual Documents |
 
 ---
 
-## 🤖 AI-Powered Engineering
+# ⚙️ Pipeline Execution Lifecycle
 
-- Multi-Agent AI Pipeline
-- Specialized AI agents for each SDLC phase
-- Structured engineering artifact generation
-- Context-aware sequential workflow
-- Automated documentation generation
-- Artifact refinement and review
+The pipeline executes sequentially to preserve engineering context throughout the workflow.
 
----
-
-## 💻 Modern Frontend
-
-- React + TypeScript
-- Vite for fast development
-- TailwindCSS responsive UI
-- Zustand state management
-- Axios API integration
-- Responsive dashboard
-- Real-time pipeline status
-- Artifact preview interface
+1. The user submits a software project idea.
+2. ForgeAI creates a new project and execution run.
+3. The Requirements Analyst extracts project requirements.
+4. The Software Architect designs the system architecture.
+5. The Task Planner creates implementation milestones.
+6. The Database Designer generates the database schema.
+7. The Backend Generator produces backend planning artifacts.
+8. The Frontend Generator creates frontend design artifacts.
+9. The Reviewer validates generated outputs.
+10. The Refiner enhances documentation quality.
+11. The Artifact Packager bundles all generated files.
+12. Users preview or download individual artifacts or a ZIP package.
 
 ---
 
-## ⚙️ Enterprise Backend
+# 🎯 Why a Multi-Agent Approach?
 
-- FastAPI REST API
-- Async SQLAlchemy ORM
-- Clean Architecture
-- Dependency Injection
-- Pydantic v2 validation
-- Modular service layer
-- Background pipeline execution
-- Comprehensive error handling
+Unlike single-prompt AI systems, ForgeAI distributes responsibilities across multiple specialized agents.
 
----
+This architecture provides several advantages:
 
-## 🔐 Authentication & Security
+- 🧩 Separation of engineering responsibilities
+- 📈 Improved consistency between generated artifacts
+- 🔄 Better context propagation across SDLC phases
+- 📦 Modular and extensible pipeline design
+- 🛠️ Easier maintenance and future expansion
+- ⚡ Scalable orchestration for additional AI agents
 
-- JWT Access Tokens
-- Refresh Token Authentication
-- Password hashing
-- Protected API routes
-- Role-based authorization
-- Secure API communication
-- Environment-based configuration
+By modeling the software development lifecycle as a sequence of collaborative AI agents, ForgeAI demonstrates a practical approach to AI-assisted software engineering rather than simple code generation.
 
 ---
 
-## 🗄️ Database
+# ✨ Features
 
-- PostgreSQL (Neon)
-- SQLAlchemy Async ORM
-- Alembic database migrations
-- Automatic schema migrations
-- Persistent project storage
-- Pipeline execution history
-- Artifact metadata management
+ForgeAI combines modern AI capabilities with enterprise software engineering practices to automate the planning and documentation phases of software development.
 
 ---
 
-## 📄 Artifact Management
+## 🤖 AI Capabilities
 
+- Multi-Agent AI Orchestration
+- AI-powered Software Requirements Analysis
+- Automated System Architecture Generation
+- Intelligent Task Planning
+- Database Schema Design
+- Backend Planning & API Design
+- Frontend Planning & UI Structure
+- Automated Artifact Review
+- Documentation Refinement
+- Engineering Artifact Packaging
+
+---
+
+## 💻 Frontend
+
+- React 19
+- TypeScript
+- Vite
+- TailwindCSS
+- Zustand State Management
+- Axios API Client
+- Responsive Dashboard
+- Authentication Pages
+- Project Management Interface
 - Artifact Preview
-- Individual Downloads
-- ZIP Package Download
-- Persistent artifact storage
-- Organized document structure
+- Download Manager
 
 ---
 
-## 🌐 Deployment
+## ⚙ Backend
 
-- Frontend deployed on Vercel
-- Backend deployed on Render
-- Neon PostgreSQL database
-- Dockerized backend
-- Automatic Alembic migrations
-- Production-ready configuration
+- FastAPI
+- Async SQLAlchemy
+- Pydantic v2
+- Alembic Migrations
+- PostgreSQL Integration
+- Clean Architecture
+- Repository Pattern
+- Dependency Injection
+- Modular Services
+- Background Task Execution
 
-  # 🛠️ Tech Stack
+---
 
-| Category | Technologies |
-|-----------|--------------|
-| **Frontend** | React, TypeScript, Vite, TailwindCSS, Zustand, Axios |
-| **Backend** | FastAPI, SQLAlchemy (Async), Pydantic v2 |
-| **Database** | PostgreSQL, Neon, Alembic |
-| **Authentication** | JWT, Refresh Tokens |
-| **AI Integration** | Grok API (OpenAI Compatible) |
-| **Deployment** | Vercel, Render |
-| **Containerization** | Docker |
-| **Version Control** | Git, GitHub |
+## 🔐 Security
 
-# 🏗️ System Architecture
+- JWT Authentication
+- Refresh Tokens
+- Password Hashing
+- Protected Routes
+- Role-Based Authorization
+- Secure API Configuration
+- Environment Variable Management
+
+---
+
+## 📦 Artifact Management
+
+- Preview Generated Artifacts
+- Download Individual Files
+- Download Complete ZIP Package
+- Persistent Artifact Storage
+- Run History
+- Project History
+
+---
+
+## ☁ Deployment
+
+- Dockerized Backend
+- Render Deployment
+- Vercel Frontend
+- Neon PostgreSQL
+- Automatic Database Migration
+- Production Configuration
+- HTTPS Ready
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+| Technology | Purpose |
+|------------|---------|
+| React | User Interface |
+| TypeScript | Type Safety |
+| Vite | Build Tool |
+| TailwindCSS | Styling |
+| Zustand | State Management |
+| Axios | API Communication |
+
+---
+
+## Backend
+
+| Technology | Purpose |
+|------------|---------|
+| FastAPI | REST API |
+| SQLAlchemy Async | ORM |
+| Pydantic v2 | Data Validation |
+| Alembic | Database Migration |
+| AsyncPG | PostgreSQL Driver |
+
+---
+
+## Database
+
+| Technology | Purpose |
+|------------|---------|
+| PostgreSQL | Relational Database |
+| Neon | Managed Cloud Database |
+
+---
+
+## AI
+
+| Technology | Purpose |
+|------------|---------|
+| Grok API | LLM Inference |
+| Multi-Agent Pipeline | Software Engineering Automation |
+
+---
+
+## DevOps
+
+| Technology | Purpose |
+|------------|---------|
+| Docker | Containerization |
+| Render | Backend Hosting |
+| Vercel | Frontend Hosting |
+| GitHub | Version Control |
+
+---
+
+# 🏗 System Architecture
+
+ForgeAI follows **Clean Architecture** principles to maintain separation of concerns, scalability, and maintainability.
+
+## High-Level Architecture
 
 ```mermaid
 flowchart LR
 
-A[User]
+User --> Frontend
 
-B[React Frontend]
+Frontend --> Backend
 
-C[FastAPI Backend]
+Backend --> Application
 
-D[Application Layer]
+Application --> Domain
 
-E[AI Agent Pipeline]
+Application --> Infrastructure
 
-F[(PostgreSQL)]
+Infrastructure --> PostgreSQL
 
-G[Artifacts]
+Application --> AI_Pipeline
 
-A --> B
+AI_Pipeline --> Artifacts
 
-B --> C
-
-C --> D
-
-D --> E
-
-D --> F
-
-E --> G
-
-F --> G
-```
-
-## Clean Architecture
-
-```text
-Presentation Layer
-        │
-        ▼
-Application Layer
-        │
-        ▼
-Domain Layer
-        │
-        ▼
-Infrastructure Layer
-```
-
-## Request Flow
-
-```text
-User
-
-↓
-
-React Frontend
-
-↓
-
-FastAPI API
-
-↓
-
-Authentication
-
-↓
-
-Application Services
-
-↓
-
-AI Pipeline
-
-↓
-
-Database
-
-↓
-
-Artifacts
-
-↓
-
-Response
+Artifacts --> Frontend
 ```
 
 ---
 
-# 📁 Project Structure
+## Clean Architecture
+
+```mermaid
+flowchart TD
+
+Presentation
+
+Application
+
+Domain
+
+Infrastructure
+
+Presentation --> Application
+
+Application --> Domain
+
+Application --> Infrastructure
+
+Infrastructure --> Domain
+```
+
+---
+
+## Request Lifecycle
+
+```mermaid
+sequenceDiagram
+
+actor User
+
+participant Frontend
+
+participant Backend
+
+participant Auth
+
+participant Pipeline
+
+participant Database
+
+User->>Frontend: Submit Project
+
+Frontend->>Backend: POST /projects
+
+Backend->>Auth: Validate JWT
+
+Auth-->>Backend: Authorized
+
+Backend->>Pipeline: Execute AI Pipeline
+
+Pipeline->>Database: Store Artifacts
+
+Pipeline-->>Backend: Pipeline Complete
+
+Backend-->>Frontend: Return Results
+
+Frontend-->>User: Display Artifacts
+```
+
+---
+
+# 📂 Project Structure
 
 ```text
 ForgeAI
@@ -387,7 +492,8 @@ ForgeAI
 │   │   ├── application
 │   │   ├── domain
 │   │   ├── infrastructure
-│   │   └── presentation
+│   │   ├── presentation
+│   │   └── main.py
 │   ├── Dockerfile
 │   └── pyproject.toml
 │
@@ -398,7 +504,8 @@ ForgeAI
 │   │   ├── components
 │   │   ├── features
 │   │   ├── pages
-│   │   └── shared
+│   │   ├── shared
+│   │   └── main.tsx
 │   └── vite.config.ts
 │
 ├── docs
@@ -406,66 +513,114 @@ ForgeAI
 │   ├── gifs
 │   └── images
 │
-└── README.md
+├── scripts
+│
+├── README.md
+│
+└── LICENSE
 ```
 
 ---
-# 📸 Screenshots
 
-## Login
+## 🏛 Design Principles
+
+ForgeAI was designed around modern enterprise software engineering principles:
+
+- Clean Architecture
+- Separation of Concerns
+- SOLID Principles
+- Repository Pattern
+- Dependency Injection
+- Modular AI Pipeline
+- Asynchronous Processing
+- Cloud-Native Deployment
+- Secure Authentication
+- Scalable Project Organization
+
+---
+
+# 📸 Application Screenshots
+
+The following screenshots showcase the major workflows and user interface of ForgeAI.
+
+> **Note:** Replace these placeholders with your actual screenshots located in the `docs/images/` directory.
+
+---
+
+## 🔐 Login
 
 <p align="center">
-<img src="docs/images/login.png" width="90%">
+<img src="./docs/images/login.png" alt="Login" width="90%">
 </p>
 
 ---
 
-## Dashboard
+## 📝 Register
 
 <p align="center">
-<img src="docs/images/dashboard.png" width="90%">
+<img src="./docs/images/register.png" alt="Register" width="90%">
 </p>
 
 ---
 
-## AI Pipeline Execution
+## 📊 Dashboard
 
 <p align="center">
-<img src="docs/images/pipeline.png" width="90%">
+<img src="./docs/images/dashboard.png" alt="Dashboard" width="90%">
 </p>
 
 ---
 
-## Generated Artifacts
+## 🚀 Create Project
 
 <p align="center">
-<img src="docs/images/artifact.png" width="90%">
+<img src="./docs/images/create-project.png" alt="Create Project" width="90%">
 </p>
 
 ---
 
-## Artifact Preview
+## 🤖 AI Pipeline Execution
 
 <p align="center">
-<img src="docs/images/preview.png" width="90%">
+<img src="./docs/images/pipeline.png" alt="Pipeline" width="90%">
 </p>
 
 ---
-# 💻 Installation
+
+## 📄 Generated Artifacts
+
+<p align="center">
+<img src="./docs/images/artifact.png" alt="Artifacts" width="90%">
+</p>
+
+---
+
+## 👀 Artifact Preview
+
+<p align="center">
+<img src="./docs/images/preview.png" alt="Artifact Preview" width="90%">
+</p>
+
+---
+
+# ⚙️ Local Development Setup
 
 ## Prerequisites
 
-Before running ForgeAI locally, ensure the following software is installed:
+Before running ForgeAI locally, ensure the following software is installed.
 
-- Python 3.12+
-- Node.js 20+
-- PostgreSQL (or Neon Database)
-- Docker (optional)
-- Git
+| Software | Version |
+|----------|----------|
+| Python | 3.12+ |
+| Node.js | 20+ |
+| npm | Latest |
+| PostgreSQL | 16+ (or Neon) |
+| Docker | Latest |
+| Git | Latest |
 
 ---
 
-## Clone Repository
+# 📥 Clone Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/ForgeAI.git
@@ -475,11 +630,17 @@ cd ForgeAI
 
 ---
 
-## Backend Setup
+# ⚙️ Backend Setup
+
+Navigate to the backend directory.
 
 ```bash
 cd backend
+```
 
+Create a virtual environment.
+
+```bash
 python -m venv .venv
 ```
 
@@ -495,60 +656,71 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-Install dependencies
+Install dependencies.
 
 ```bash
 pip install -e .
 ```
 
-Run migrations
+Run database migrations.
 
 ```bash
 alembic upgrade head
 ```
 
-Start backend
+Start the backend server.
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
----
-
-## Frontend Setup
-
-```bash
-cd frontend
-
-npm install
-
-npm run dev
-```
-
----
-
-Frontend
-
-```
-http://localhost:5173
-```
-
-Backend
+Backend URL
 
 ```
 http://localhost:8000
 ```
 
-Swagger
+Swagger Documentation
 
 ```
 http://localhost:8000/docs
 ```
 
 ---
+
+# 🎨 Frontend Setup
+
+Navigate to the frontend directory.
+
+```bash
+cd frontend
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Start the development server.
+
+```bash
+npm run dev
+```
+
+Frontend URL
+
+```
+http://localhost:5173
+```
+
+---
+
 # 🔑 Environment Variables
 
-## Backend (.env)
+## Backend
+
+Create a `.env` file inside the `backend` directory.
 
 ```env
 DATABASE_URL=
@@ -570,75 +742,200 @@ GROK_MODEL=
 
 ---
 
-## Frontend (.env)
+## Frontend
+
+Create a `.env` file inside the `frontend` directory.
 
 ```env
 VITE_API_BASE_URL=
 ```
 
-> Never commit secrets or API keys. Use environment variables for all sensitive configuration.
-
 ---
+
 # 🐳 Docker
 
-Run the backend using Docker.
-
-Build image
+Build the Docker image.
 
 ```bash
 docker build -t forgeai-backend .
 ```
 
-Run container
+Run the Docker container.
 
 ```bash
 docker run -p 8000:8000 forgeai-backend
 ```
 
-During startup, Docker automatically executes:
+During container startup, ForgeAI automatically executes:
 
 ```bash
 python -m alembic upgrade head
 ```
 
-before launching the FastAPI server, ensuring the database schema is always up to date.
+before launching the FastAPI application to ensure the database schema is always up to date.
 
 ---
-# 🚀 Deployment
 
-ForgeAI is deployed using a modern cloud-native architecture.
+# ☁️ Deployment
 
-| Service | Platform |
-|----------|----------|
+ForgeAI is deployed using a cloud-native architecture.
+
+| Component | Platform |
+|-----------|----------|
 | Frontend | Vercel |
 | Backend | Render |
 | Database | Neon PostgreSQL |
-
-Deployment Highlights
-
-- Dockerized FastAPI backend
-- Automatic Alembic migrations
-- HTTPS-enabled services
-- Production-ready environment configuration
-- Secure JWT authentication
-- Async PostgreSQL connectivity
-- Scalable cloud deployment
+| AI Provider | Grok API |
 
 ---
+
+## Deployment Highlights
+
+- Dockerized FastAPI Backend
+- Automatic Alembic Database Migration
+- Async PostgreSQL Connectivity
+- HTTPS Enabled
+- Secure JWT Authentication
+- Production Environment Configuration
+- Cloud-native Deployment
+
+---
+
 # 📚 API Overview
+
+ForgeAI exposes RESTful APIs for authentication, project management, pipeline execution, and artifact handling.
 
 | Module | Description |
 |---------|-------------|
-| Authentication | Login, Registration, Token Refresh |
-| Projects | Create and manage projects |
-| Pipeline | Execute AI workflow |
-| Runs | Track pipeline executions |
-| Artifacts | Preview and download generated artifacts |
+| Authentication | Login, Registration, Refresh Tokens |
+| Projects | Create and Manage Projects |
+| Pipeline | Execute Multi-Agent Workflow |
+| Runs | Monitor Pipeline Execution |
+| Artifacts | Preview and Download Generated Files |
 
-Interactive API documentation is available through Swagger UI.
+Interactive API documentation is available at:
 
-```
+```text
 /docs
 ```
 
+---
+
+# 🗺️ Roadmap
+
+ForgeAI is designed to be an extensible AI software engineering platform. The following enhancements are planned for future releases.
+
+## Version 1.1
+
+- [ ] Streaming AI responses
+- [ ] Parallel agent execution
+- [ ] Improved execution monitoring
+- [ ] Enhanced error reporting
+- [ ] Better artifact formatting
+
+---
+
+## Version 1.2
+
+- [ ] GitHub repository generation
+- [ ] Automatic README generation
+- [ ] UML diagram generation
+- [ ] Sequence diagram generation
+- [ ] Architecture diagram export
+
+---
+
+## Version 2.0
+
+- [ ] Multi-LLM support (OpenAI, Claude, Gemini, Grok)
+- [ ] RAG-powered project context
+- [ ] Agent memory
+- [ ] Team collaboration
+- [ ] Project versioning
+- [ ] CI/CD workflow generation
+- [ ] Infrastructure as Code generation
+- [ ] Plugin ecosystem
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+If you would like to improve ForgeAI:
+
+1. Fork the repository.
+2. Create a feature branch.
+
+```bash
+git checkout -b feature/my-feature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "feat: add my feature"
+```
+
+4. Push your branch.
+
+```bash
+git push origin feature/my-feature
+```
+
+5. Open a Pull Request.
+
+Please ensure that your code follows the existing project structure and coding conventions.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for more information.
+
+---
+
+# 👨‍💻 Author
+
+## Ayush Rana
+
+**B.Tech Computer Science & Engineering (Cyber Physical Systems)**  
+Vellore Institute of Technology, Chennai
+
+### Connect with me
+
+- GitHub: https://github.com/Ayushrana1704
+- LinkedIn: https://www.linkedin.com/in/ayush-rana132321/
+
+---
+
+# 🙏 Acknowledgements
+
+ForgeAI was developed as a final-year engineering project to explore how modern AI systems can automate structured software engineering workflows through collaborative multi-agent orchestration.
+
+Special thanks to the open-source communities behind:
+
+- FastAPI
+- React
+- SQLAlchemy
+- PostgreSQL
+- Vite
+- TailwindCSS
+- Docker
+
+whose tools and ecosystems made this project possible.
+
+---
+
+<div align="center">
+
+## ⭐ If you found this project interesting, consider giving it a star!
+
+Thank you for visiting the ForgeAI repository.
+
+Built with ❤️ using FastAPI, React, TypeScript, PostgreSQL, Docker, and AI.
+
+</div>
 
