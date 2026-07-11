@@ -49,7 +49,11 @@ class Settings(BaseSettings):
     @classmethod
     def normalise_db_url(cls, v: str) -> str:
         if v.startswith("postgresql://") and "asyncpg" not in v:
-            return v.replace("postgresql://", "postgresql+asyncpg://", 1)
+            v = v.replace("postgresql://", "postgresql+asyncpg://", 1)
+
+        # Remove psycopg-specific query parameter for asyncpg
+        v = v.replace("?sslmode=require", "")
+
         return v
 
     @property
