@@ -1,6 +1,6 @@
-git add README.md
-git commit -m "docs: add hero banner to README"
-git push origin main
+<p align="center">
+  <img src="./docs/images/hero.png" alt="ForgeAI Banner" width="100%">
+</p>
 <div align="center">
 
 # 🚀 ForgeAI
