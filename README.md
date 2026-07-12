@@ -41,9 +41,9 @@
 
 | Service | Link |
 |---------|------|
-| 🚀 Frontend | https://YOUR-VERCEL-URL |
-| ⚙ Backend API | https://YOUR-RENDER-URL |
-| 📚 Swagger Docs | https://YOUR-RENDER-URL/docs |
+| 🚀 Frontend | https://forge-ai-lac-eta.vercel.app/login |
+| ⚙ Backend API | https://forgeai-hxrp.onrender.com|
+| 📚 Swagger Docs | https://forgeai-hxrp.onrender.com/docs |
 
 ---
 
